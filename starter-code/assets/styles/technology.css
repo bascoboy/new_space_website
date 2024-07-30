@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-image: url("../technology/background-technology-desktop.jpg");
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+
+nav ul,
+nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-style: normal;
+    color: rgb(255, 248, 248);
+    font-weight: 100;
+
+}
+
+li.active {
+    border-bottom: 3px solid rgb(238, 238, 238);
+
+
+}
+
+ul.menu {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .1);
+    margin-right: 4rem;
+    height: 6rem;
+    width: 50vw;
+    margin-right: -1rem;
+    backdrop-filter: blur(10px);
+    line-height: 6rem;
+
+}
+
+
+ul.menu li {
+    margin-right: 30px;
+    border-bottom: 3px solid transparent;
+
+}
+
+
+
+ul.menu li:hover {
+    border-bottom: 3px solid rgb(238, 238, 238);
+
+}
+
+ul.menu li a:focus {
+    border-bottom: 3px solid rgb(238, 238, 238);
+
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    height: fit-content;
+    margin-left: 2rem;
+}
+
+header nav::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: .04px;
+    left: 13rem;
+    background: rgb(228, 219, 219);
+    width: 36vw;
+    top: calc(50% - 2px);
+}
+
+span.number {
+    margin-right: -5px;
+    font-weight: bold;
+    font-size: larger;
+
+
+}
+
+
+
+.technology-page {
+    padding: 1rem;
+}
+
+
+
+h3.title {
+    color: rgb(50, 46, 46);
+    font-size: x-large;
+    word-spacing: .5em;
+    text-transform: uppercase;
+    margin-top: 0rem;
+    margin-left: 8rem;
+}
+
+span.white-title {
+    color: white;
+    font-weight: 100;
+
+}
+.main-content{
+    display: flex;
+    margin-left: 8rem;
+}
+
+ul.menu li.active {
+    border-bottom: 3px solid white;
+}
+
+.title{
+    color:rgb(227, 223, 223) ;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.name{
+    margin: inherit;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: max-content;
+
+}
+.info{
+    color:rgb(227, 223, 223) ;
+    font-weight: 100;
+    word-spacing: .3rem;
+    line-height: 1.5rem;
+}
+.tech-info{
+    padding: 2rem;
+    margin-right: 9rem;
+    
+}
+img.tech-image{
+    height: 70vh;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .pagination ul li {
+    margin: 0 5px;
+  }
+  
+  .pagination ul li a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    text-align: center;
+    line-height: 25px;
+    color: #444;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination ul li.active a {
+    background-color: #0077ff;
+    color: #fff;
+  }
+  
+  .pagination ul li a:hover {
+    background-color: #ddd;
+    color: #444;
+    cursor:pointer;
+  }
+  
+  .disc {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 10px;
+    border: .4px solid #eee;
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+    font-weight: 100;
+  }
+  #disc-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 24rem;
+
+  }
+  
+  .disc.active {
+    background-color: #fff;
+    color: #000;
+  }
+  
